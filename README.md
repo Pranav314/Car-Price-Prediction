@@ -1,55 +1,103 @@
-# Car Price Prediction
+# 🚗 Car Price Prediction
 
-This repository contains a machine learning project focused on predicting car prices. This project leverages various regression models to accurately estimate the selling price of used cars based on their features.
+A machine learning project that predicts the **selling price of a used car** based on key features such as purchase year, purchase price, kilometers driven, fuel type, seller type, transmission, and number of previous owners.  
+Includes a **desktop GUI application (wxPython)** for easy and interactive predictions.
 
-## Project Overview
+---
 
-The goal of this project is to build a robust car price prediction model. This involves:
-- **Data Collection and Preprocessing**: Gathering car data, handling missing values, encoding categorical features, and preparing the dataset for model training.
-- **Exploratory Data Analysis (EDA)**: Analyzing the dataset to understand relationships between features and the target variable (selling price).
-- **Model Training**: Implementing and training different regression models, including Linear Regression and Lasso Regression.
-- **Model Evaluation**: Assessing the performance of the trained models using metrics such as R-squared error and visualizing actual vs. predicted prices.
+## 📌 Features
 
-## Technologies Used
+- Predicts estimated selling price of a car  
+- Clean and user-friendly GUI  
+- Easy to run, no ML expertise required  
+- Uses regression algorithms for accurate predictions  
+- Loads trained model from a `.pkl` file  
 
-- Python
-- Pandas (for data manipulation)
-- NumPy (for numerical operations)
-- Scikit-learn (for machine learning models)
-- Matplotlib & Seaborn (for data visualization)
+---
 
-## How to Use
+## 🧠 Machine Learning Overview
 
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/Pranav314/car-price-prediction.git
-    ```
-2.  **Navigate to the project directory**:
-    ```bash
-    cd car-price-prediction
-    ```
-3.  **Install the required libraries**:
-    ```bash
-    pip install pandas numpy scikit-learn matplotlib seaborn
-    ```
-4.  **Run the Jupyter Notebook / Python script** to see the data preprocessing, model training, and evaluation steps.
+- **Data Preprocessing:** cleaning, encoding, feature selection  
+- **Model Training:** Linear Regression, Lasso Regression  
+- **Model Evaluation:** R² score, actual vs predicted comparison  
+- **Model Saving:** final model stored as `car_price_model.pkl`  
 
-## Dataset
+---
 
-The dataset used for this project is typically sourced from online car marketplaces or publicly available datasets containing information such as:
-- Car Name
-- Year of Manufacture
-- Selling Price
-- Present Price
-- Kms Driven
-- Fuel Type
-- Seller Type
-- Transmission Type
-- Owner
+## 🖥 GUI Application (wxPython)
 
-## Results
+### **User Inputs**
+- Year you bought the car  
+- Price you bought the car for (in lakh)  
+- Total kilometers driven  
+- Fuel type (Petrol / Diesel / CNG)  
+- Seller type (Dealer / Individual)  
+- Transmission (Manual / Automatic)  
+- Number of previous owners  
 
-The project demonstrates the application of Linear Regression and Lasso Regression in predicting car prices, providing insights into their performance and accuracy. Visualizations are included to show the correlation between actual and predicted prices.
+### **Output**
+- **Predicted Selling Price (in lakh)**
 
---- 
+---
+
+## 📂 Project Structure
+
+```
+Car-Price-Prediction/
+│
+├── car_price_model.pkl        # Trained ML model
+├── gui.py                     # GUI application
+├── model_utils.py             # Model loader
+└── Car-Price-Prediction.ipynb # Notebook used for ML training
+```
+
+---
+
+## 🚀 How to Run
+
+### **1. Install dependencies**
+```bash
+pip install wxPython numpy scikit-learn
+```
+
+### **2. Run GUI**
+```bash
+python gui.py
+```
+
+---
+
+## 📊 Dataset Details
+
+Features included:
+- Car Name  
+- Year  
+- Present Price  
+- Selling Price  
+- Kms Driven  
+- Fuel Type  
+- Seller Type  
+- Transmission  
+- Owner  
+
+Dataset source: **CarDekho Used Car Dataset**
+
+---
+
+## 🛠 Technologies Used
+
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- wxPython  
+- Matplotlib & Seaborn  
+
+---
+
+## 📸 Screenshots  
+<img width="511" height="695" alt="image" src="https://github.com/user-attachments/assets/8c9ffcb4-6b57-4233-8d4e-a564f04baf0d" />
+
+
+---
 
